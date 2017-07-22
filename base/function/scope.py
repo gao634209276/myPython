@@ -5,7 +5,7 @@
 # 作用域
 # i作用域在func中,外部print无效
 def func():
-    i = 8
+	i = 8
 
 
 # print i, j   # j的作用域从12行开始,先print无效
@@ -15,8 +15,8 @@ print j
 
 # 局部变量
 def func2(a):
-    i = 7
-    print "func2内部", i
+	i = 7
+	print "func2内部", i
 
 
 i = 9
@@ -27,9 +27,9 @@ print "func2外部", i
 
 # 全局变量,global全局声明
 def func3():
-    global i
-    i = 7
-    print "func3内部global", i
+	global i
+	i = 7
+	print "func3内部global", i
 
 
 # i=9

@@ -15,8 +15,8 @@ def 函数名（）：
 
 # 3.自定义函数
 def test_func():
-    x = 8
-    print x
+	x = 8
+	print x
 
 
 # 函数形参与实参,参数的概念
@@ -27,10 +27,10 @@ print len(a)
 
 # a,b是形参,1,2是实参
 def max(a, b):
-    if a > b:
-        print a
-    else:
-        print b
+	if a > b:
+		print a
+	else:
+		print b
 
 
 max(1, 3)
@@ -43,7 +43,7 @@ max(1, 3)
 
 
 def println(a, b=8):
-    print a, b
+	print a, b
 
 
 println(1)
@@ -52,7 +52,7 @@ println(1, 2)
 
 # 关键参数
 def println(a=1, b=6, c=7):
-    print a, b, c
+	print a, b, c
 
 
 println(5)

@@ -14,7 +14,7 @@
 
 # 定义函数
 def a():
-    i = 1
+	i = 1
 
 
 # 调用函数
@@ -24,8 +24,8 @@ a()
 # 函数返回值通过return语句来实现的
 # 1.一个返回值的情况
 def test():
-    i = 7
-    return i
+	i = 7
+	return i
 
 
 print "test return:", test()
@@ -33,8 +33,8 @@ print "test return:", test()
 
 # 2.多个返回值的情况
 def test2(i, j):
-    k = i * j
-    return (i, j, k)
+	k = i * j
+	return (i, j, k)
 
 
 print "test2 return:", test2(4, 5)

@@ -9,20 +9,20 @@ else：
 """
 # 第一个for语句
 for i in [1, 2, 8, 9, 0]:
-    print i
+	print i
 
 # 学会使用range函数，第二个for语句
 for i in range(1, 7):
-    print "hello"
+	print "hello"
 for i in range(1, 10, 3):
-    print i
+	print i
 
 # 最后看一个带嵌套的for语句
 
 for i in range(1, 10):
-    if i % 2 == 0:
-        print i
-        print "偶数"
-    else:
-        print i
-        print "奇数"
+	if i % 2 == 0:
+		print i
+		print "偶数"
+	else:
+		print i
+		print "奇数"

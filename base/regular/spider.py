@@ -16,15 +16,15 @@ f.close()
 # 爬取链接
 links = re.findall('href="(.*?)"', html, re.S)
 for each in links:
-    print each
+	print each
 
 # 抓取部分文字,先大再小
 text_fied = re.findall('<ul>(.*?)</ul>', html, re.S)[0]
 the_text = re.findall('">(.*?)</a>', text_fied, re.S)
 for every_text in the_text:
-    print every_text
+	print every_text
 
 # sub实现翻页
 for i in range(2, total_page + 1):
-    new_link = re.sub('pageNum=\d+', 'pageNum=%d' % i, old_url, re.S)
-    print new_link
+	new_link = re.sub('pageNum=\d+', 'pageNum=%d' % i, old_url, re.S)
+	print new_link
