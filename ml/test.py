@@ -48,9 +48,7 @@ def computeCost(X, y, theta=[[0], [0]]):
     J = 1.0 / (2 * m) * (np.square(h - y))
     return J
 
-
 computeCost(X, y)
-
 
 # 梯度下降法
 def grandientDescent(X, y, theta=[[0], [0]], alpha=0.01, num_iters=1500):
