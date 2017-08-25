@@ -11,9 +11,9 @@ f.close()
 pic_url = re.findall('img src="(.*?)" class="lessonimg"', html, re.S)
 i = 0
 for each in pic_url:
-    print 'now downloading:' + each
-    pic = requests.get(each)
-    fp = open('../../file/pic/' + str(i) + '.jpg', 'wb')
-    fp.write(pic.content)
-    fp.close()
-    i += 1
+	print 'now downloading:' + each
+	pic = requests.get(each)
+	fp = open('../../file/pic/' + str(i) + '.jpg', 'wb')
+	fp.write(pic.content)
+	fp.close()
+	i += 1

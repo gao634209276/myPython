@@ -24,7 +24,7 @@ print re.findall('xx.*?xx', secret_code)
 d = re.findall('xx(.*?)xx', secret_code)
 print d
 for each in d:
-    print each
+	print each
 
 s = '''sdfxxhello
 xxfsdfxxworldxxasdf'''

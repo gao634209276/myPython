@@ -16,6 +16,7 @@ content = '''我是文件的内容
 1
 '''
 fw = file("../../file/file.txt", "w")
+# fw = file("../../file/file.txt", "a")
 fw.write(content)
 fw.close()
 
@@ -26,9 +27,9 @@ fo.close()
 # 读取文件,关键点：先打开文件，在进入while循环依次读取每行
 fr = file("../../file/file.txt")
 while True:
-    line = fr.readline()
-    if len(line) == 0:
-        break
-    print len(line), line
+	line = fr.readline()
+	if len(line) == 0:
+		break
+	print len(line), line
 
 fr.close()

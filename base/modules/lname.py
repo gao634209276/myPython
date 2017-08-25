@@ -4,6 +4,6 @@
 # print __name__
 # 其次我们看一下__name__属性的常用情况
 if __name__ == "__main__":
-    print "This is main"
+	print "This is main"
 else:
-    print "This is not main"
+	print "This is not main"

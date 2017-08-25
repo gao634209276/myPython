@@ -32,19 +32,19 @@ str = read.top(tongji[0], 0)  # 服务器将返回由参数标识的邮件前0�
 # print str #返回3个参数，[1]对我们有用
 str2 = []
 for x in str[1]:  # 其中str[1]，也就是str中的第2个参数为第一封邮件的各种信息，在这里要给其进行编码
-    try:
-        str2.append(x.decode())
-    except:
-        try:
-            str2.append(x.decode('gbk'))
-        except:
-            str2.append((x.decode('big5')))
+	try:
+		str2.append(x.decode())
+	except:
+		try:
+			str2.append(x.decode('gbk'))
+		except:
+			str2.append((x.decode('big5')))
 msg = email.message_from_string('\n'.join(str2))  # 这个方法能把String的邮件转换成email.message实例
 # msg是把经过编码的str2转化为可识别的邮件信息，并且每行一个信息,join用来连接字符串
 biaoti = decode_header(msg['subject'])
 # print biaoti
 if biaoti[0][1]:  # 如果有第二个元素，说明有编码信息
-    biaoti2 = biaoti[0][0].decode(biaoti[0][1])
+	biaoti2 = biaoti[0][0].decode(biaoti[0][1])
 else:
-    biaoti2 = biaoti[0][0]
+	biaoti2 = biaoti[0][0]
 print biaoti2
