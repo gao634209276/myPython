@@ -7,7 +7,7 @@ print id(x)
 x = 2
 print id(x)
 
-#print y
+# print y
 
 # 给多个变量赋值
 a = (1, 2, 3)

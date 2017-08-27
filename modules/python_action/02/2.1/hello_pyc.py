@@ -1,2 +1,3 @@
-import py_compile    
+import py_compile
+
 py_compile.compile('hello.py')
