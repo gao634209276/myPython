@@ -1,0 +1,8 @@
+然后去下面lfd的网址，里面有很多python的资源和库与工具
+http://www.lfd.uci.edu/~gohlke/pythonlibs/
+在上面的网址中找到python_igraph去下载具体的python对应版本和是32位还是64位的，我这里下载的的python27 win64的
+python_igraph-0.7.1.post6-cp27-none-win_amd64.whl
+
+利用pip 安装whl文件
+命令格式就是：pip install 文件名.whl
+但是避免出错的前提是，打开cmd以后，要cd进入你存放的该whl文件的解压后的目录下在用pip进行安装。
