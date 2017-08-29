@@ -1,0 +1,9 @@
+Pandas 的数据可视化使用的matplotlib为基础组件.
+更基础的信息可以参阅matplotlib相关内容.
+本节主要介绍pandas里提供的比matplotlit更便捷的数据可视化操作.
+	线型图
+	柱状图
+	直方图
+	概率密度图
+	散布图
+	饼图

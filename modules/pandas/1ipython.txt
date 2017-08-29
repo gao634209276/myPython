@@ -1,0 +1,25 @@
+python 命令行与ipython行的区别
+	显示数据可读性更强
+		import numpy as np
+		from numpy.random import randn
+		data={i:randn() for i in range(6)}
+		data={i:randn(i) for i in range(6)}
+	命令补全
+	shell命令
+		大部分直接可以工作如cd,ls,pwd
+		少部分可在前面加上!如!rename
+	内省:类或变量加问号
+	魔术命令
+		%run 命令
+		%timeit 命令
+		%quickref 显示快速参考文档
+		%magic 显示魔术命令列表和文档
+
+在web上进行探索性变成,内联图片显示
+启动
+	ipython notebook
+	jupyter notebook
+特点
+	web 上的ipython
+	显示内联图片
+	导出数据和分析过程

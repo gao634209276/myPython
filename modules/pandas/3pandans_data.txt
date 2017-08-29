@@ -1,0 +1,80 @@
+pandas 快速入门
+快速入门1
+	十分钟了解pandas
+	http://pandas.pydata.org/pandas-docs/stable/10min.html
+	译文:
+	http://www.shizhuolin.com/2015/04/19/978.html
+----------------------
+快速入门2
+	处理丢失数据
+	数据运算
+	数据合并
+	数据分组
+	参考pandas_intro.ipynb
+----------------------
+快速入门3
+	数据整形
+	数据透视
+	时间序列
+	数据可视化
+	数据载入与保存
+	参考:pandas_intro_p3.ipynb
+----------------------
+数据实例:分析MovieLens电影数据
+100w电影评分数据,6000个用户对4000个电影评分
+https://grouplens.org/datasets/movielens/
+ratings.dat
+	UserID::MovieID::Rating::Timestamp
+users.dat:
+	UserID::Gender::Age::Occupation::Zip-code
+movies.dat
+	MovieID::Title::Genres
+
+
+----------------------
+pandas 核心数据结构
+
+Series:
+Series是以为带标签的数组,数组里可以放任意的数据(整数,浮点数,字符串,Python Object)
+	其基本的创建函数是:
+		s=pd.Series(data,index=index)
+		其中index是一个列表,用来作为数据的标签.data可以是不同的数据类型:如:
+			1)Python字典,
+			2)ndarray对象,
+			3)一个标量,如5
+	Series对象的特性:
+		类 ndarray对象
+		类dict对象
+		标签对齐操作
+
+
+DataFrame
+DataFrame 是一个二维的标签的数组(一个行标签,一个列标签),
+我们可以把DataFrame想象成为execl表格或者SQL数据表,或者想象为一个Series字典.
+他是Pandas里最常用的数据结构.
+创建DataFrame的基本格式为:
+	df = pd.DataFrame(data,index=index,columns=columns)
+	其中index是行标签,columns是列表前,data可以是一下数据:
+		1)由一个numpy数组,list,Series构成的字典
+		2)二维numpy数组
+		3)一个Series
+		4)另外一个DataFrame对象
+DataFrame特性:
+	列选择/增加/删除
+	使用assign()方法插入新列
+	索引和选择
+		选择一列-->df[col]-->Series
+		根据行标签选择一行-->df.loc[label]-->Series
+		根据行位置选择一行-->df.iloc[label]-->Series
+		选择多行-->df[5:10]-->DataFrame
+		根据布尔向量选择多行-->df[bool_vector]-->DataFrame
+	数据对齐
+	使用numpy函数
+
+Panel
+Panel是三维带标签的数据,实际上,Pandas的名称又来是有Panel演进的,即pan(el)-da(ta)-s.
+Panel比较少用,但依然是最重要的基本数据结构之一.
+	items:坐标轴0,索引对应的元素是一个DataFrame
+	major_axis:坐标轴1,DataFrame里的行标签
+	minor_axis:坐标轴2,DataFrame的列标签
+
