@@ -7,3 +7,7 @@ Pandas 的数据可视化使用的matplotlib为基础组件.
 	概率密度图
 	散布图
 	饼图
+
+高级绘图函数
+	1,Pandas高级换图函数放在pandas.tools.ploting包里
+	2.定制化的绘图需要学习 matplotlib 包用法
