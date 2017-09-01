@@ -1,22 +1,3 @@
-统计学相关知识参考与简单总结:
-
-
-Bias(偏差)，Error(误差)，和Variance(方差)
-https://www.zhihu.com/question/27068705
-http://blog.csdn.net/u014696921/article/details/76375697
-欠拟合、过拟合及其解决方法
-http://lib.csdn.net/article/machinelearning/50713
-http://blog.csdn.net/willduan1/article/details/53070777
-http://www.cnblogs.com/nxld/p/6058782.html
-
-
-精确度与召回率:
-	http://www.cnblogs.com/pinard/p/5993450.html
-
-
-各种熵:
-http://blog.csdn.net/xierhacker/article/details/53463567
-
 
 
 --------------------------------------------------------------------------------
@@ -86,6 +67,21 @@ http://blog.csdn.net/han_xiaoyang/article/details/50469334
 	http://blog.csdn.net/zouxy09/article/details/48903179
 
 
+
+
+Bias(偏差)，Error(误差)，和Variance(方差)
+https://www.zhihu.com/question/27068705
+http://blog.csdn.net/u014696921/article/details/76375697
+欠拟合、过拟合及其解决方法
+http://lib.csdn.net/article/machinelearning/50713
+http://blog.csdn.net/willduan1/article/details/53070777
+http://www.cnblogs.com/nxld/p/6058782.html
+
+精确度与召回率:
+	http://www.cnblogs.com/pinard/p/5993450.html
+
+各种熵:
+http://blog.csdn.net/xierhacker/article/details/53463567
 
 
 
